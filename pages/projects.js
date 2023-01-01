@@ -12,11 +12,11 @@ export default function Projects({ projects }) {
           <meta name="description" content="포트폴리오 리스트" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <h1 className="text-4xl font-bold sm:text-6xl">
+        <h1 className="m-8 text-4xl font-bold md:text-6xl">
           총 프로젝트 :
           <span className="pl-4 text-blue-500">{projects.results.length}</span>
         </h1>
-        <div className="grid grid-cols-1 gap-8 p-12 m-4 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8  m-4 sm:grid-cols-2 md:grid-cols-3">
           {projects.results.map((aProject) => (
             <ProjectItem key={aProject.id} data={aProject} />
           ))}

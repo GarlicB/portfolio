@@ -36,11 +36,10 @@ export default function ProjectItem({ data }) {
         className="rounded-t-xl"
         src={imgSrc}
         alt="cover image"
-        width="100%"
-        height="100%"
+        width="10%"
+        height="10%"
         layout="responsive"
-        objectFit="none"
-        quality={100}
+        objectFit="cover"
       />
 
       <div className="p-4 flex flex-col">
@@ -51,16 +50,18 @@ export default function ProjectItem({ data }) {
         <p className="my-1 ">
           작업기간 : {start} ~ {end} ({calculatedPeriod(start, end)}일)
         </p>
-        <div className="flex items-start mt-2">
+        {/*
+        <div className="mt-2">
           {tags.map((aTag) => (
-            <h1
+            <span
               className="px-2 py-1 mr-2 rounded-md bg-sky-200 dark:bg-sky-700 w-30"
               key={aTag.id}
             >
               {aTag.name}
-            </h1>
+            </span>
           ))}
         </div>
+          */}
       </div>
     </div>
   );
