@@ -7,12 +7,7 @@ export default function Darkmode() {
   };
   return (
     <button
-      className="inline-flex 
-      focus:outline-none 
-      border-0 py-1 px-3 rounded bg-black
-      dark:bg-gray-300 
-      dark:hover:text-orange-500
-      hover:bg-grey-50 hover:text-yellow-300"
+      className="inline-flex px-3 py-1 bg-black border-0 rounded focus:outline-none dark:bg-gray-300 dark:hover:text-orange-500 hover:bg-grey-50 hover:text-yellow-300"
       onClick={() => changeMode()}
     >
       <svg
@@ -21,7 +16,7 @@ export default function Darkmode() {
         viewBox="0 0 24 24"
         strokeWidth="1.5"
         stroke="currentColor"
-        className="invisible dark:visible dark:h-5 dark:w-5 h-0 w-0"
+        className="invisible w-0 h-0 dark:visible dark:h-5 dark:w-5"
       >
         <path
           strokeLinecap="round"
@@ -35,7 +30,7 @@ export default function Darkmode() {
         viewBox="0 0 24 24"
         strokeWidth="1.5"
         stroke="currentColor"
-        className="visible dark:invisible dark:h-0 dark:w-0 h-5 w-5"
+        className="visible w-5 h-5 dark:invisible dark:h-0 dark:w-0"
       >
         <path
           strokeLinecap="round"
