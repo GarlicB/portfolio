@@ -10,8 +10,8 @@ export default function Sidebar({ toggle, setToggle }) {
         transition: ".5s all",
       }}
     >
-      <div className="flex flex-col flex-wrap p-5 mx-auto md:flex-row">
-        <p className="flex items-center mb-4 font-medium text-gray-900 title-font md:mb-0">
+      <div className="flex flex-col p-5 mx-auto">
+        <p className="flex items-center mb-4 font-medium text-gray-900 title-font">
           <button
             onClick={() => {
               setToggle(!toggle);
@@ -34,7 +34,7 @@ export default function Sidebar({ toggle, setToggle }) {
           </button>
           <span className="ml-3 text-xl">갈릭마늘빵의 포트폴리오</span>
         </p>
-        <nav className="grid flex-wrap items-center justify-start mt-12 text-base md:ml-auto">
+        <nav className="grid flex-wrap justify-start mt-12 text-base">
           <Link href="/">
             <p className=" hover:text-gray-900">홈</p>
           </Link>
